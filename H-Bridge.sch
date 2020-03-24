@@ -70,13 +70,9 @@ Connection ~ 6700 2650
 Wire Wire Line
 	5150 3550 5100 3550
 Wire Wire Line
-	5100 3550 5100 3150
-Wire Wire Line
 	5100 3150 6400 3150
 Connection ~ 5150 3550
 Connection ~ 6400 2650
-Wire Wire Line
-	5150 2650 5150 2700
 Wire Wire Line
 	5150 3200 6400 3200
 Wire Wire Line
@@ -113,71 +109,10 @@ Connection ~ 6100 3450
 Wire Wire Line
 	6100 3450 6150 3450
 Wire Wire Line
-	5000 3550 5100 3550
-Connection ~ 5100 3550
-Wire Wire Line
-	4250 2500 4250 2700
-Wire Wire Line
-	4250 3350 4250 3550
-Wire Wire Line
-	4450 2700 4550 2700
-Wire Wire Line
-	4450 3550 4550 3550
-Wire Wire Line
-	4200 3350 4250 3350
-Connection ~ 4250 3350
-Wire Wire Line
-	5150 2450 5150 2650
-Wire Wire Line
-	3900 2300 4200 2300
-Connection ~ 4200 2300
-Wire Wire Line
-	4200 2300 4550 2300
-Wire Wire Line
-	3900 3000 4000 3000
-Wire Wire Line
-	4000 3000 4000 2700
-Wire Wire Line
-	4200 2700 4250 2700
-Connection ~ 4250 2700
-Wire Wire Line
-	3900 3100 4000 3100
-Wire Wire Line
-	4000 3100 4000 3350
-Wire Wire Line
-	3900 2900 4550 2900
-Wire Wire Line
-	4550 2900 4550 3150
-Connection ~ 3900 2900
-Wire Wire Line
-	3900 3700 4200 3700
-Wire Wire Line
-	5000 3700 5000 4000
-Wire Wire Line
 	5900 4000 5900 3550
 Wire Wire Line
 	5900 3550 6100 3550
 Connection ~ 6100 3550
-Wire Wire Line
-	4550 3550 4700 3550
-Connection ~ 4550 3550
-Wire Wire Line
-	4550 2700 4700 2700
-Connection ~ 4550 2700
-Wire Wire Line
-	5000 2700 5150 2700
-Connection ~ 5150 2700
-Wire Wire Line
-	5150 2700 5150 3200
-Connection ~ 4200 3700
-Wire Wire Line
-	4200 3700 5000 3700
-Wire Wire Line
-	5000 4000 5900 4000
-Wire Wire Line
-	3900 2300 3900 2900
-Wire Wire Line
-	3900 3200 3900 3700
 Wire Wire Line
 	7100 2100 7100 2950
 Wire Wire Line
@@ -197,42 +132,6 @@ Connection ~ 6700 3000
 Wire Wire Line
 	6700 3000 6700 3300
 $Comp
-L Connector:Screw_Terminal_01x02 J2
-U 1 1 5D1873E0
-P 6150 2800
-F 0 "J2" V 6275 2746 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 6230 2701 50  0001 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2mm" H 6150 2800 50  0001 C CNN
-F 3 "~" H 6150 2800 50  0001 C CNN
-F 4 "" H 6150 2800 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    6150 2800
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 5E740531
-P 4350 3550
-F 0 "R4" V 4450 3550 50  0000 C CNN
-F 1 "1k" V 4350 3550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 3550 50  0001 C CNN
-F 3 "~" H 4350 3550 50  0001 C CNN
-F 4 "" H 4350 3550 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    4350 3550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5E73FFA0
-P 4350 2700
-F 0 "R3" V 4450 2700 50  0000 C CNN
-F 1 "1k" V 4350 2700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 2700 50  0001 C CNN
-F 3 "~" H 4350 2700 50  0001 C CNN
-F 4 "" H 4350 2700 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    4350 2700
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:D_Small D2
 U 1 1 5E68CCA1
 P 6100 3650
@@ -240,10 +139,6 @@ F 0 "D2" V 6100 3718 50  0000 L CNN
 F 1 "D" H 6100 3775 50  0001 C CNN
 F 2 "Diode_THT:D_DO-15_P12.70mm_Horizontal" H 6100 3650 50  0001 C CNN
 F 3 "~" H 6100 3650 50  0001 C CNN
-F 4 "" H 6100 3650 50  0001 C CNN "Spice_Model"
-F 5 "" H 6100 3650 50  0001 C CNN "Spice_Netlist_Enabled"
-F 6 "" H 6100 3650 50  0001 C CNN "Spice_Primitive"
-F 7 "" H 6100 3650 50  0001 C CNN "Spice_Node_Sequence"
 	1    6100 3650
 	0    1    1    0   
 $EndComp
@@ -255,118 +150,94 @@ F 0 "D1" H 5950 3337 50  0000 C CNN
 F 1 "D" H 5950 3575 50  0001 C CNN
 F 2 "Diode_THT:D_DO-15_P12.70mm_Horizontal" H 5950 3450 50  0001 C CNN
 F 3 "~" H 5950 3450 50  0001 C CNN
-F 4 "" H 5950 3450 50  0001 C CNN "Spice_Model"
-F 5 "" H 5950 3450 50  0001 C CNN "Spice_Netlist_Enabled"
-F 6 "" H 5950 3450 50  0001 C CNN "Spice_Primitive"
-F 7 "" H 5950 3450 50  0001 C CNN "Spice_Node_Sequence"
 	1    5950 3450
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R11
+L Device:R_Small_US R10
 U 1 1 5E64BCDA
 P 6550 3750
-F 0 "R11" V 6600 3750 50  0000 C CNN
-F 1 "100k" V 6450 3750 50  0000 C CNN
+F 0 "R10" V 6450 3750 50  0000 C CNN
+F 1 "100k" V 6350 3750 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6480 3750 50  0001 C CNN
 F 3 "~" H 6550 3750 50  0001 C CNN
-F 4 "" H 6550 3750 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    6550 3750
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R10
+L Device:R_Small_US R9
 U 1 1 5E64B477
 P 6550 2650
-F 0 "R10" V 6600 2650 50  0000 C CNN
-F 1 "100k" V 6450 2650 50  0000 C CNN
+F 0 "R9" V 6437 2650 50  0000 C CNN
+F 1 "100k" V 6346 2650 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6480 2650 50  0001 C CNN
 F 3 "~" H 6550 2650 50  0001 C CNN
-F 4 "" H 6550 2650 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    6550 2650
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R8
+L Device:R_Small_US R8
 U 1 1 5E64A792
 P 5300 3750
-F 0 "R8" V 5350 3750 50  0000 C CNN
-F 1 "100k" V 5200 3750 50  0000 C CNN
+F 0 "R8" V 5200 3750 50  0000 C CNN
+F 1 "100k" V 5100 3750 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5230 3750 50  0001 C CNN
 F 3 "~" H 5300 3750 50  0001 C CNN
-F 4 "" H 5300 3750 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5300 3750
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q3
+L Device:Q_NMOS_GDS Q7
 U 1 1 5D027856
 P 5350 2450
-F 0 "Q3" H 5556 2450 50  0000 L CNN
+F 0 "Q7" H 5554 2450 50  0000 L CNN
 F 1 "Q_NMOS_GDS" H 5556 2405 50  0001 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5550 2550 50  0001 C CNN
 F 3 "~" H 5350 2450 50  0001 C CNN
-F 4 "" H 5350 2450 50  0001 C CNN "Spice_Model"
-F 5 "" H 5350 2450 50  0001 C CNN "Spice_Netlist_Enabled"
-F 6 "" H 5350 2450 50  0001 C CNN "Spice_Primitive"
-F 7 "" H 5350 2450 50  0001 C CNN "Spice_Node_Sequence"
 	1    5350 2450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q5
+L Device:Q_NMOS_GDS Q9
 U 1 1 5D03D8FD
 P 6600 2450
-F 0 "Q5" H 6806 2450 50  0000 L CNN
+F 0 "Q9" H 6806 2450 50  0000 L CNN
 F 1 "Q_NMOS_GDS" H 6806 2405 50  0001 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6800 2550 50  0001 C CNN
 F 3 "~" H 6600 2450 50  0001 C CNN
-F 4 "" H 6600 2450 50  0001 C CNN "Spice_Model"
-F 5 "" H 6600 2450 50  0001 C CNN "Spice_Netlist_Enabled"
-F 6 "" H 6600 2450 50  0001 C CNN "Spice_Primitive"
-F 7 "" H 6600 2450 50  0001 C CNN "Spice_Node_Sequence"
 	1    6600 2450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q4
+L Device:Q_NMOS_GDS Q8
 U 1 1 5D040727
 P 5350 3550
-F 0 "Q4" H 5556 3550 50  0000 L CNN
+F 0 "Q8" H 5556 3550 50  0000 L CNN
 F 1 "Q_NMOS_GDS" H 5556 3505 50  0001 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5550 3650 50  0001 C CNN
 F 3 "~" H 5350 3550 50  0001 C CNN
-F 4 "" H 5350 3550 50  0001 C CNN "Spice_Model"
-F 5 "" H 5350 3550 50  0001 C CNN "Spice_Netlist_Enabled"
-F 6 "" H 5350 3550 50  0001 C CNN "Spice_Primitive"
-F 7 "" H 5350 3550 50  0001 C CNN "Spice_Node_Sequence"
 	1    5350 3550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q6
+L Device:Q_NMOS_GDS Q10
 U 1 1 5D041B26
 P 6600 3550
-F 0 "Q6" H 6806 3550 50  0000 L CNN
+F 0 "Q10" H 6806 3550 50  0000 L CNN
 F 1 "Q_NMOS_GDS" H 6806 3505 50  0001 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6800 3650 50  0001 C CNN
 F 3 "~" H 6600 3550 50  0001 C CNN
-F 4 "" H 6600 3550 50  0001 C CNN "Spice_Model"
-F 5 "" H 6600 3550 50  0001 C CNN "Spice_Netlist_Enabled"
-F 6 "" H 6600 3550 50  0001 C CNN "Spice_Primitive"
-F 7 "" H 6600 3550 50  0001 C CNN "Spice_Node_Sequence"
 	1    6600 3550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R7
+L Device:R_Small_US R7
 U 1 1 5D059ABF
 P 5300 2650
-F 0 "R7" V 5350 2650 50  0000 C CNN
-F 1 "100k" V 5200 2650 50  0000 C CNN
+F 0 "R7" V 5187 2650 50  0000 C CNN
+F 1 "100k" V 5096 2650 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5230 2650 50  0001 C CNN
 F 3 "~" H 5300 2650 50  0001 C CNN
-F 4 "" H 5300 2650 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    5300 2650
 	0    -1   -1   0   
 $EndComp
@@ -378,113 +249,7 @@ F 0 "D3" H 6250 3563 50  0000 C CNN
 F 1 "D" H 6250 3575 50  0001 C CNN
 F 2 "Diode_THT:D_DO-15_P12.70mm_Horizontal" H 6250 3450 50  0001 C CNN
 F 3 "~" H 6250 3450 50  0001 C CNN
-F 4 "" H 6250 3450 50  0001 C CNN "Spice_Model"
-F 5 "" H 6250 3450 50  0001 C CNN "Spice_Netlist_Enabled"
-F 6 "" H 6250 3450 50  0001 C CNN "Spice_Primitive"
-F 7 "" H 6250 3450 50  0001 C CNN "Spice_Node_Sequence"
 	1    6250 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J1
-U 1 1 5D072624
-P 3700 3100
-F 0 "J1" H 3618 2767 50  0000 C CNN
-F 1 "Conn_01x04" H 3779 3091 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3700 3100 50  0001 C CNN
-F 3 "~" H 3700 3100 50  0001 C CNN
-F 4 "" H 3700 3100 50  0001 C CNN "Spice_Primitive"
-F 5 "" H 3700 3100 50  0001 C CNN "Spice_Model"
-F 6 "" H 3700 3100 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    3700 3100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:Q_NPN_CBE Q2
-U 1 1 5D10A621
-P 4450 3350
-F 0 "Q2" H 4641 3350 50  0000 L CNN
-F 1 "Q_NPN_CBE" H 4641 3305 50  0001 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 3450 50  0001 C CNN
-F 3 "~" H 4450 3350 50  0001 C CNN
-F 4 "" H 4450 3350 50  0001 C CNN "Spice_Model"
-F 5 "" H 4450 3350 50  0001 C CNN "Spice_Netlist_Enabled"
-F 6 "" H 4450 3350 50  0001 C CNN "Spice_Primitive"
-	1    4450 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 5D10A635
-P 4100 3350
-F 0 "R2" V 4000 3350 50  0000 C CNN
-F 1 "100" V 4100 3350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4030 3350 50  0001 C CNN
-F 3 "~" H 4100 3350 50  0001 C CNN
-F 4 "" H 4100 3350 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    4100 3350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Q_NPN_CBE Q1
-U 1 1 5D08972D
-P 4450 2500
-F 0 "Q1" H 4641 2500 50  0000 L CNN
-F 1 "Q_NPN_CBE" H 4641 2455 50  0001 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 2600 50  0001 C CNN
-F 3 "~" H 4450 2500 50  0001 C CNN
-F 4 "" H 4450 2500 50  0001 C CNN "Spice_Model"
-F 5 "" H 4450 2500 50  0001 C CNN "Spice_Netlist_Enabled"
-F 6 "" H 4450 2500 50  0001 C CNN "Spice_Primitive"
-	1    4450 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 5D095CEA
-P 4100 2700
-F 0 "R1" V 4000 2700 50  0000 C CNN
-F 1 "100" V 4100 2700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4030 2700 50  0001 C CNN
-F 3 "~" H 4100 2700 50  0001 C CNN
-F 4 "" H 4100 2700 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    4100 2700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5D142199
-P 4850 3550
-F 0 "R6" V 4750 3550 50  0000 C CNN
-F 1 "100" V 4850 3550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4780 3550 50  0001 C CNN
-F 3 "~" H 4850 3550 50  0001 C CNN
-F 4 "" H 4850 3550 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    4850 3550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5D142AF8
-P 4850 2700
-F 0 "R5" V 4750 2700 50  0000 C CNN
-F 1 "100" V 4850 2700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4780 2700 50  0001 C CNN
-F 3 "~" H 4850 2700 50  0001 C CNN
-F 4 "" H 4850 2700 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    4850 2700
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 5D17CFD6
-P 7300 2950
-F 0 "J3" H 7380 2896 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 7380 2851 50  0001 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2mm" H 7300 2950 50  0001 C CNN
-F 3 "~" H 7300 2950 50  0001 C CNN
-F 4 "" H 7300 2950 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    7300 2950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -509,26 +274,311 @@ F 3 "" H 6100 3950 50  0001 C CNN
 	1    6100 3950
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+12V #PWR01
-U 1 1 5D04ECE3
-P 4200 2300
-F 0 "#PWR01" H 4200 2150 50  0001 C CNN
-F 1 "+12V" H 4215 2473 50  0000 C CNN
-F 2 "" H 4200 2300 50  0001 C CNN
-F 3 "" H 4200 2300 50  0001 C CNN
-	1    4200 2300
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	5150 2650 5150 3200
 $Comp
 L power:GNDS #PWR02
 U 1 1 5D04F9E0
-P 4200 3700
-F 0 "#PWR02" H 4200 3450 50  0001 C CNN
-F 1 "GNDS" H 4205 3527 50  0000 C CNN
-F 2 "" H 4200 3700 50  0001 C CNN
-F 3 "" H 4200 3700 50  0001 C CNN
-	1    4200 3700
+P 4400 4000
+F 0 "#PWR02" H 4400 3750 50  0001 C CNN
+F 1 "GNDS" H 4405 3827 50  0000 C CNN
+F 2 "" H 4400 4000 50  0001 C CNN
+F 3 "" H 4400 4000 50  0001 C CNN
+	1    4400 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 5D04ECE3
+P 4150 2050
+F 0 "#PWR01" H 4150 1900 50  0001 C CNN
+F 1 "+12V" H 4165 2223 50  0000 C CNN
+F 2 "" H 4150 2050 50  0001 C CNN
+F 3 "" H 4150 2050 50  0001 C CNN
+	1    4150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q3
+U 1 1 5D08972D
+P 4600 2250
+F 0 "Q3" H 4790 2250 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 4791 2205 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4800 2350 50  0001 C CNN
+F 3 "~" H 4600 2250 50  0001 C CNN
+	1    4600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5D072624
+P 3450 3350
+F 0 "J1" H 3368 3017 50  0000 C CNN
+F 1 "Conn_01x04" H 3529 3341 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3450 3350 50  0001 C CNN
+F 3 "~" H 3450 3350 50  0001 C CNN
+	1    3450 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R5
+U 1 1 5E740531
+P 4150 2300
+F 0 "R5" H 4218 2346 50  0000 L CNN
+F 1 "10k" H 4218 2255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4080 2300 50  0001 C CNN
+F 3 "~" H 4150 2300 50  0001 C CNN
+	1    4150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_CBE Q4
+U 1 1 5E6E1759
+P 4600 2750
+F 0 "Q4" H 4791 2750 50  0000 L CNN
+F 1 "Q_PNP_CBE" H 4790 2795 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4800 2850 50  0001 C CNN
+F 3 "~" H 4600 2750 50  0001 C CNN
+	1    4600 2750
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q1
+U 1 1 5E759A8C
+P 4050 2750
+F 0 "Q1" H 4241 2750 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 4241 2705 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4250 2850 50  0001 C CNN
+F 3 "~" H 4050 2750 50  0001 C CNN
+	1    4050 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2450 4150 2500
+Wire Wire Line
+	4150 2950 4700 2950
+Wire Wire Line
+	4700 2050 4150 2050
+Wire Wire Line
+	4150 2050 4150 2150
+Wire Wire Line
+	4400 2250 4400 2500
+Wire Wire Line
+	4150 2500 4400 2500
+Connection ~ 4150 2500
+Wire Wire Line
+	4150 2500 4150 2550
+Connection ~ 4400 2500
+Wire Wire Line
+	4400 2500 4400 2750
+$Comp
+L Device:Q_NPN_CBE Q5
+U 1 1 5E724DE8
+P 4600 3300
+F 0 "Q5" H 4791 3300 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 4791 3255 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4800 3400 50  0001 C CNN
+F 3 "~" H 4600 3300 50  0001 C CNN
+	1    4600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R6
+U 1 1 5E724DF2
+P 4150 3350
+F 0 "R6" H 4218 3396 50  0000 L CNN
+F 1 "10k" H 4218 3305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4080 3350 50  0001 C CNN
+F 3 "~" H 4150 3350 50  0001 C CNN
+	1    4150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_CBE Q6
+U 1 1 5E724DFC
+P 4600 3800
+F 0 "Q6" H 4791 3800 50  0000 L CNN
+F 1 "Q_PNP_CBE" H 4790 3845 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4800 3900 50  0001 C CNN
+F 3 "~" H 4600 3800 50  0001 C CNN
+	1    4600 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q2
+U 1 1 5E724E06
+P 4050 3800
+F 0 "Q2" H 4241 3800 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 4241 3755 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4250 3900 50  0001 C CNN
+F 3 "~" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3500 4150 3550
+Wire Wire Line
+	4150 4000 4400 4000
+Wire Wire Line
+	4700 3100 4150 3100
+Wire Wire Line
+	4400 3300 4400 3550
+Wire Wire Line
+	4150 3550 4400 3550
+Connection ~ 4150 3550
+Wire Wire Line
+	4150 3550 4150 3600
+Connection ~ 4400 3550
+Wire Wire Line
+	4400 3550 4400 3800
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5D17CFD6
+P 7300 2950
+F 0 "J3" H 7380 2896 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 7380 2851 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2mm" H 7300 2950 50  0001 C CNN
+F 3 "~" H 7300 2950 50  0001 C CNN
+	1    7300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5D1873E0
+P 6150 2800
+F 0 "J2" V 6275 2746 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 6230 2701 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2mm" H 6150 2800 50  0001 C CNN
+F 3 "~" H 6150 2800 50  0001 C CNN
+	1    6150 2800
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5E7992CB
+P 3750 3650
+F 0 "R1" H 3818 3696 50  0000 L CNN
+F 1 "1k" H 3818 3605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3680 3650 50  0001 C CNN
+F 3 "~" H 3750 3650 50  0001 C CNN
+	1    3750 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 2050
+Wire Wire Line
+	4700 4000 4950 4000
+Connection ~ 4700 4000
+Connection ~ 4400 4000
+Wire Wire Line
+	4400 4000 4700 4000
+Wire Wire Line
+	4150 3100 4150 3150
+Wire Wire Line
+	3650 3150 3650 2400
+Wire Wire Line
+	3650 2050 4150 2050
+Wire Wire Line
+	3650 3450 3650 4000
+Wire Wire Line
+	3650 4000 4150 4000
+Connection ~ 4150 4000
+Wire Wire Line
+	3650 3250 3850 3250
+Wire Wire Line
+	3850 3250 3850 3100
+Wire Wire Line
+	3650 3150 3950 3150
+Connection ~ 3650 3150
+Connection ~ 4150 3150
+Wire Wire Line
+	4150 3150 4150 3200
+Wire Wire Line
+	3850 2750 3850 2800
+Wire Wire Line
+	4950 4000 4950 2950
+Wire Wire Line
+	4950 2950 4700 2950
+Connection ~ 4700 2950
+Wire Wire Line
+	5100 3550 5100 3150
+Wire Wire Line
+	4700 2450 4700 2500
+Wire Wire Line
+	5150 2450 5150 2500
+Wire Wire Line
+	4700 3500 4700 3550
+Wire Wire Line
+	4950 4000 5900 4000
+Connection ~ 4950 4000
+Wire Wire Line
+	4700 3550 5100 3550
+Connection ~ 4700 3550
+Wire Wire Line
+	4700 3550 4700 3600
+Connection ~ 5100 3550
+Wire Wire Line
+	4700 2500 5150 2500
+Connection ~ 4700 2500
+Wire Wire Line
+	4700 2500 4700 2550
+Connection ~ 5150 2500
+Wire Wire Line
+	5150 2500 5150 2650
+$Comp
+L Device:R_US R3
+U 1 1 5E74FBC5
+P 3850 2950
+F 0 "R3" H 3918 2996 50  0000 L CNN
+F 1 "1k" H 3918 2905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3780 2950 50  0001 C CNN
+F 3 "~" H 3850 2950 50  0001 C CNN
+	1    3850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5E789890
+P 3850 2550
+F 0 "R2" H 3918 2596 50  0000 L CNN
+F 1 "100k" H 3918 2505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3780 2550 50  0001 C CNN
+F 3 "~" H 3850 2550 50  0001 C CNN
+	1    3850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5E78D2BA
+P 3950 3450
+F 0 "R4" H 4018 3496 50  0000 L CNN
+F 1 "100k" H 4018 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3880 3450 50  0001 C CNN
+F 3 "~" H 3950 3450 50  0001 C CNN
+	1    3950 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3800 3750 3800
+Wire Wire Line
+	3750 3500 3750 3350
+Wire Wire Line
+	3750 3350 3650 3350
+Wire Wire Line
+	3850 3800 3850 3600
+Wire Wire Line
+	3850 3600 3950 3600
+Connection ~ 3850 3800
+Wire Wire Line
+	3950 3300 3950 3150
+Connection ~ 3950 3150
+Wire Wire Line
+	3950 3150 4150 3150
+Wire Wire Line
+	3850 2700 3850 2750
+Connection ~ 3850 2750
+Wire Wire Line
+	3850 2400 3650 2400
+Connection ~ 3650 2400
+Wire Wire Line
+	3650 2400 3650 2050
 $EndSCHEMATC
