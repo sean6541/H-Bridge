@@ -796,17 +796,6 @@ Wire Wire Line
 Wire Wire Line
 	2750 4400 2850 4400
 $Comp
-L Timer:NE555 U1
-U 1 1 5EE76413
-P 5250 2250
-F 0 "U1" H 5250 2850 50  0000 C CNN
-F 1 "NE555" H 5250 2750 50  0000 C CNN
-F 2 "" H 5250 2250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 5250 2250 50  0001 C CNN
-	1    5250 2250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C3
 U 1 1 5EE81132
 P 4500 2250
@@ -826,8 +815,6 @@ Wire Wire Line
 Wire Wire Line
 	4700 2450 4700 1850
 Wire Wire Line
-	4700 1850 5250 1850
-Wire Wire Line
 	4750 2250 4650 2250
 $Comp
 L Device:C C4
@@ -846,7 +833,6 @@ Wire Wire Line
 	5450 2750 5400 2750
 Wire Wire Line
 	5250 2750 5250 2650
-Connection ~ 5250 2650
 $Comp
 L Device:R_Small_US R9
 U 1 1 5EEA9276
@@ -862,7 +848,6 @@ Wire Wire Line
 	5750 2250 5850 2250
 Wire Wire Line
 	5750 2450 5850 2450
-Connection ~ 5750 2450
 $Comp
 L Device:R_Small_US R8
 U 1 1 5EEBD20F
@@ -877,9 +862,6 @@ $EndComp
 Connection ~ 5850 2250
 Wire Wire Line
 	5850 2050 5850 1850
-Wire Wire Line
-	5850 1850 5250 1850
-Connection ~ 5250 1850
 Wire Wire Line
 	4750 2050 4750 1800
 Wire Wire Line
@@ -1017,4 +999,17 @@ F 3 "" H 4700 1850 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Connection ~ 4700 1850
+Wire Wire Line
+	4700 1850 5850 1850
+$Comp
+L Timer:NE555D U1
+U 1 1 5EE76413
+P 5250 2250
+F 0 "U1" H 5250 2850 50  0000 C CNN
+F 1 "NE555D" H 5250 2750 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5250 2250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 5250 2250 50  0001 C CNN
+	1    5250 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
