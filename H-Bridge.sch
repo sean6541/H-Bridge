@@ -184,12 +184,12 @@ F 4 "C25383" H 5850 4650 50  0001 C CNN "LCSC"
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J1
+L Connector_Generic:Conn_01x04 J1
 U 1 1 5D072624
 P 5450 1850
-F 0 "J1" H 5368 1617 50  0000 C CNN
-F 1 "Conn_01x03" H 5529 1841 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5450 1850 50  0001 C CNN
+F 0 "J1" H 5368 1517 50  0000 C CNN
+F 1 "Conn_01x04" H 5529 1841 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5450 1850 50  0001 C CNN
 F 3 "~" H 5450 1850 50  0001 C CNN
 	1    5450 1850
 	-1   0    0    1   
@@ -472,4 +472,19 @@ Wire Wire Line
 Connection ~ 6650 2650
 Wire Wire Line
 	6650 2650 6250 2650
+$Comp
+L power:+12V #PWR?
+U 1 1 5FAD0D48
+P 5750 1600
+F 0 "#PWR?" H 5750 1450 50  0001 C CNN
+F 1 "+12V" V 5765 1728 50  0000 L CNN
+F 2 "" H 5750 1600 50  0001 C CNN
+F 3 "" H 5750 1600 50  0001 C CNN
+	1    5750 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 1650 5750 1650
+Wire Wire Line
+	5750 1650 5750 1600
 $EndSCHEMATC
